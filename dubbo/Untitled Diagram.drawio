@@ -1,1 +1,192 @@
-<mxfile host="app.diagrams.net" modified="2022-04-05T17:45:33.030Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" version="17.4.0" etag="oXtgoqHfPIsq88fcEUUX" type="github"><diagram id="r_csHRhm5GLsOBvNf6fY">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-04-05T17:46:18.306Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="dLfCH0MQrEOaa0N5GDkM" version="17.4.0" type="github">
+  <diagram id="r_csHRhm5GLsOBvNf6fY" name="Page-1">
+    <mxGraphModel dx="1740" dy="1114" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-2" target="pYXR9DPsIJt5nxNccHnB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-2" value="Dubbo 服务端开始" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="20" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-5" target="pYXR9DPsIJt5nxNccHnB-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-6" target="pYXR9DPsIJt5nxNccHnB-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-5" value="org.apache.dubbo.remoting.transport.netty4.NettyServerHandler#channelRead&lt;br&gt;对请求地址进行存放. 并将 NettyChannel 和 msg 一同触发调用" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="130" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-6" value="&lt;span&gt;org.apache.dubbo.remoting.transport.MultiMessageHandler#received&lt;/span&gt;&lt;br&gt;&lt;span&gt;对消息内容进行判断并处理.&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="270" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-8" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pYXR9DPsIJt5nxNccHnB-7">
+          <mxGeometry x="-0.312" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-11" target="pYXR9DPsIJt5nxNccHnB-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-10" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-11" target="pYXR9DPsIJt5nxNccHnB-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-11" value="判断消息类型是否是 MultiMessage" style="rhombus;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="475" y="225" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-13" target="pYXR9DPsIJt5nxNccHnB-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-13" value="循环" style="ellipse;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-15" target="pYXR9DPsIJt5nxNccHnB-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-15" value="处理消息" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-23" target="pYXR9DPsIJt5nxNccHnB-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-19" target="pYXR9DPsIJt5nxNccHnB-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-19" target="pYXR9DPsIJt5nxNccHnB-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-19" value="org.apache.dubbo.remoting.transport.DecodeHandler#received&lt;br&gt;判断消息来源一级消息类型. 并将对应消息数据体进行处理" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;arcSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="1140" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-21" target="pYXR9DPsIJt5nxNccHnB-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-21" value="org.apache.dubbo.remoting.exchange.support.header.HeartbeatHandler#received&lt;br&gt;判断消息内容是否为心跳消息(请求和响应).&amp;nbsp;&lt;br&gt;是则处理并结束. 否则继续调用其他服务处理" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="470" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-23" target="pYXR9DPsIJt5nxNccHnB-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-23" value="org.apache.dubbo.remoting.transport.dispatcher.all.AllChannelHandler#received&lt;br&gt;获取线程池, 并将消息处理封装为 `&lt;span style=&quot;color: rgb(111 , 66 , 193) ; background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9pt&quot;&gt;ChannelEventRunnable`丢入线程队列&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="610" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-24" value="线程池通过 是 applicationModel.getExtensionLoader().getDefaultExtension() 获取" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;glass=0;strokeWidth=1;shadow=0;arcSize=17;" vertex="1" parent="1">
+          <mxGeometry x="640" y="600" width="390" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-26" target="pYXR9DPsIJt5nxNccHnB-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-26" value="异步线程" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-32" target="pYXR9DPsIJt5nxNccHnB-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-32" target="pYXR9DPsIJt5nxNccHnB-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-32" target="pYXR9DPsIJt5nxNccHnB-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-32" target="pYXR9DPsIJt5nxNccHnB-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-32" target="pYXR9DPsIJt5nxNccHnB-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-32" value="&lt;pre style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9pt&quot;&gt;&lt;pre style=&quot;color: rgb(36 , 41 , 46) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9pt&quot;&gt;&lt;span style=&quot;color: #6f42c1&quot;&gt;ChannelEventRunnable&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9pt&quot;&gt;&lt;font color=&quot;#6f42c1&quot;&gt;根据当前事件状态执行不同事件逻辑&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="850" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-33" value="&lt;pre style=&quot;background-color: #ffffff ; color: #24292e ; font-family: &amp;quot;jetbrains mono&amp;quot; , monospace ; font-size: 9.0pt&quot;&gt;&lt;span style=&quot;color: #005cc5 ; font-style: italic&quot;&gt;CONNECTED&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-72" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-35" target="pYXR9DPsIJt5nxNccHnB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-35" value="&lt;pre style=&quot;background-color: #ffffff ; color: #24292e ; font-family: &amp;quot;jetbrains mono&amp;quot; , monospace ; font-size: 9.0pt&quot;&gt;&lt;span style=&quot;color: #005cc5 ; font-style: italic&quot;&gt;RECEIVED&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-205" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-36" value="&lt;pre style=&quot;background-color: #ffffff ; color: #24292e ; font-family: &amp;quot;jetbrains mono&amp;quot; , monospace ; font-size: 9.0pt&quot;&gt;&lt;span style=&quot;color: #005cc5 ; font-style: italic&quot;&gt;DISCONNECTED&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-37" value="&lt;pre style=&quot;background-color: #ffffff ; color: #24292e ; font-family: &amp;quot;jetbrains mono&amp;quot; , monospace ; font-size: 9.0pt&quot;&gt;&lt;span style=&quot;color: #005cc5 ; font-style: italic&quot;&gt;SENT&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="193" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-38" value="&lt;pre style=&quot;background-color: #ffffff ; color: #24292e ; font-family: &amp;quot;jetbrains mono&amp;quot; , monospace ; font-size: 9.0pt&quot;&gt;&lt;span style=&quot;color: #005cc5 ; font-style: italic&quot;&gt;CAUGHT&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-43" target="pYXR9DPsIJt5nxNccHnB-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-40" value="1. 获取序列化类型并反序列化&lt;br&gt;2. 补全版本信息&lt;br&gt;3.获取请求路径和请求版本&lt;br&gt;....&lt;br&gt;通过 frameworkModel 获取到所有服务仓库&lt;br&gt;根据请求路径和版本获取到指定的 ProviderModel" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="1000" width="490" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-42" target="pYXR9DPsIJt5nxNccHnB-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-42" value="org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler#received" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;arcSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="1280" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-43" value="&lt;span&gt;org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation#decode()&lt;/span&gt;&lt;br&gt;&lt;span&gt;消息体信息处理(补全)&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=12;fontColor=#000000;strokeColor=default;fillColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1140" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-45" target="pYXR9DPsIJt5nxNccHnB-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-45" value="org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler#handleRequest" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;arcSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="1420" width="540" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-48" target="pYXR9DPsIJt5nxNccHnB-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-48" target="pYXR9DPsIJt5nxNccHnB-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="org.apache.dubbo.remoting.exchange.support.ExchangeHandlerAdapter#reply&lt;br&gt;invoke 对应服务的 invoker" id="pYXR9DPsIJt5nxNccHnB-48">
+          <mxCell style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;arcSize=17;" vertex="1" parent="1">
+            <mxGeometry x="-150" y="1560" width="540" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-49" value="通过&amp;nbsp;&lt;br&gt;org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol#getInvoker&lt;br&gt;获取path 对应&amp;nbsp;exporter 并从中获取 Invoker" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1560" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-51" target="pYXR9DPsIJt5nxNccHnB-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder.CallbackRegistrationInvoker#invoke" id="pYXR9DPsIJt5nxNccHnB-51">
+          <mxCell style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;arcSize=17;" vertex="1" parent="1">
+            <mxGeometry x="-150" y="1700" width="540" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="pYXR9DPsIJt5nxNccHnB-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="pYXR9DPsIJt5nxNccHnB-53" target="pYXR9DPsIJt5nxNccHnB-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="..." id="pYXR9DPsIJt5nxNccHnB-53">
+          <mxCell style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;arcSize=17;" vertex="1" parent="1">
+            <mxGeometry x="80" y="1800" width="80" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="通过 javaassist 请求到指定的代理Bean中." id="pYXR9DPsIJt5nxNccHnB-54">
+          <mxCell style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;arcSize=17;" vertex="1" parent="1">
+            <mxGeometry x="-40" y="1920" width="320" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
