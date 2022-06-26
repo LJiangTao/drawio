@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-26T14:55:00.959Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="6lF5EM9F1PfDVPsMXjeZ" version="20.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-26T16:22:48.228Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="jTm2jSqVO736z--rNRGp" version="20.0.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2620" dy="984" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4576" dy="2058" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -622,6 +622,9 @@
         <mxCell id="GNtHBQbHIOn84DsilRQU-276" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GNtHBQbHIOn84DsilRQU-271" target="GNtHBQbHIOn84DsilRQU-275">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-286" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GNtHBQbHIOn84DsilRQU-271" target="GNtHBQbHIOn84DsilRQU-285">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="GNtHBQbHIOn84DsilRQU-271" value="如果 resolve = true, 则根据 #autowireNecessary &lt;br&gt;执行不同的 BeanWrapper 生成逻辑&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-85" y="1569" width="365" height="41" as="geometry" />
         </mxCell>
@@ -654,6 +657,33 @@
         </mxCell>
         <mxCell id="GNtHBQbHIOn84DsilRQU-281" value="#instantiateBean" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="580" y="1609" width="120" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-288" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GNtHBQbHIOn84DsilRQU-285" target="GNtHBQbHIOn84DsilRQU-287">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-285" value="从&amp;nbsp;SmartInstantiationAwareBeanPostProcessor#determineCandidateConstructors&lt;br&gt;获取构造函数" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-85" y="1660" width="365" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-290" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GNtHBQbHIOn84DsilRQU-287" target="GNtHBQbHIOn84DsilRQU-289">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-292" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GNtHBQbHIOn84DsilRQU-287" target="GNtHBQbHIOn84DsilRQU-291">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-287" value="通过上方构造函数, 使用 #autowireConstructor 进行构建 BeanWrapper" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-85" y="1733" width="365" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-289" value="如果 ctors 不为空&lt;br&gt;OR 注入模式为构造器注入&lt;br&gt;OR mbd 存在构造函数参数&lt;br&gt;OR args 不为空" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="356.25" y="1722" width="365" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-294" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GNtHBQbHIOn84DsilRQU-291" target="GNtHBQbHIOn84DsilRQU-293">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-291" value="如果 mbd.getPreferredConstructors 不为空, 则使用其进行 &lt;br&gt;#autowireCOnstructor 创建 BeanWrapper&lt;br&gt;并 return" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-85" y="1820" width="365" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="GNtHBQbHIOn84DsilRQU-293" value="保底方案 #instantiateBean" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-85" y="1910" width="365" height="41" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
