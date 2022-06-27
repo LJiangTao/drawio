@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-27T02:45:09.135Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="5UelMmq6A0-7qHL8NQem" version="20.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-27T02:46:30.614Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="psYUVrI8i4xt_LIokswn" version="20.0.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="3008" dy="735" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -111,12 +111,6 @@
         <mxCell id="GNtHBQbHIOn84DsilRQU-28" value="+ resetBeanDefinition(String beanName) : void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;" parent="GNtHBQbHIOn84DsilRQU-25" vertex="1">
           <mxGeometry y="66" width="640" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GNtHBQbHIOn84DsilRQU-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GNtHBQbHIOn84DsilRQU-37" target="GNtHBQbHIOn84DsilRQU-38" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GNtHBQbHIOn84DsilRQU-37" value="开始初始化对象" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-600" y="840" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="GNtHBQbHIOn84DsilRQU-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GNtHBQbHIOn84DsilRQU-38" target="GNtHBQbHIOn84DsilRQU-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -185,6 +179,9 @@
               <mxPoint x="-430" y="1190" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="mV17mAQ3-SIT-4adssYM-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GNtHBQbHIOn84DsilRQU-46" target="mV17mAQ3-SIT-4adssYM-16">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="GNtHBQbHIOn84DsilRQU-46" value="获取 Bean&lt;br&gt;doGetBean()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-615" y="1080" width="150" height="60" as="geometry" />
@@ -717,6 +714,17 @@
         </mxCell>
         <mxCell id="mV17mAQ3-SIT-4adssYM-9" value="+ postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) : void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="mV17mAQ3-SIT-4adssYM-7">
           <mxGeometry y="36" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mV17mAQ3-SIT-4adssYM-14" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-555" y="880" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mV17mAQ3-SIT-4adssYM-15" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="mV17mAQ3-SIT-4adssYM-14" parent="WIyWlLk6GJQsqaUBKTNV-1" target="GNtHBQbHIOn84DsilRQU-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-675" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mV17mAQ3-SIT-4adssYM-16" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-555" y="1180" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
