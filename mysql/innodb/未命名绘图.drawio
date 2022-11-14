@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-14T16:33:48.059Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="SIubraX6El5CSZaWDy8H" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-14T16:40:07.154Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="XVKYzKTCzkR0AljpZz2L" version="20.5.1" type="github">
   <diagram id="IUVNri6rh-2-FdHcO7aX" name="第 1 页">
-    <mxGraphModel dx="3083" dy="2825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3122" dy="1874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -95,37 +95,64 @@
           <mxGeometry x="320" y="660" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="YAavre0zh-Ue7fDhdw5P-31" value="" style="group;fontFamily=Courier New;labelBackgroundColor=none;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="-1690" y="-107.5" width="1260" height="340" as="geometry" />
+          <mxGeometry x="-1690" y="-107.5" width="720" height="350" as="geometry" />
         </mxCell>
         <mxCell id="YAavre0zh-Ue7fDhdw5P-29" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-31">
-          <mxGeometry width="720" height="340" as="geometry" />
+          <mxGeometry width="720" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-30" value="&lt;h1&gt;数据页&lt;/h1&gt;&lt;div&gt;数据页是 InnoDB 管理存储空间的最小单位, 通过 innodb_page_size 进行控制.&amp;nbsp;&lt;/div&gt;&lt;div&gt;默认是 16384(16KB)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;下图中是一个数据页的结构.&lt;/div&gt;&lt;div&gt;File Heander 用于描述当前数据页的通用信息, 类似所在空间, 页号, 页的类型, 用于建立链表的上下连接, 页面最后修改的 &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;LSN, 属于哪个表空间&lt;/div&gt;&lt;div&gt;User Record 代表用户数据, 用户数据就是我们真实的行数据.&lt;/div&gt;&lt;div&gt;Free Space 则是代表当前数据页还有多少空间可用&lt;/div&gt;&lt;div&gt;Fil Tailer 当前数据页校验和.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-31">
-          <mxGeometry x="22.5" y="17.72" width="647.5" height="202.28" as="geometry" />
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-30" value="&lt;h1&gt;数据页&lt;/h1&gt;&lt;div&gt;数据页是 InnoDB 管理存储空间的最小单位, 通过 innodb_page_size 进行控制.&amp;nbsp;&lt;/div&gt;&lt;div&gt;默认是 16384(16KB)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;下图中是一个数据页的结构.&lt;/div&gt;&lt;div&gt;File Heander 用于描述当前数据页的通用信息, 类似所在空间, 页号, 页的类型, 用于建立链表的上下连接, &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&amp;nbsp;页面最后修改的LSN, 属于哪个表空间&lt;/div&gt;&lt;div&gt;User Record 代表用户数据, 用户数据就是我们真实的行数据.&lt;/div&gt;&lt;div&gt;Free Space 则是代表当前数据页还有多少空间可用&lt;/div&gt;&lt;div&gt;Fil Tailer 当前数据页校验和.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-31">
+          <mxGeometry x="12.86" y="17.72" width="607.14" height="212.28" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-50" value="" style="group;fontFamily=Courier New;labelBackgroundColor=none;" vertex="1" connectable="0" parent="YAavre0zh-Ue7fDhdw5P-31">
-          <mxGeometry x="30" y="247.5" width="650" height="71.17" as="geometry" />
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-108" value="" style="group" vertex="1" connectable="0" parent="YAavre0zh-Ue7fDhdw5P-31">
+          <mxGeometry x="12.86" y="247.5" width="687.14" height="91.17" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-32" value="File&lt;br&gt;Header&lt;br&gt;(38byte)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
-          <mxGeometry width="50" height="71.17" as="geometry" />
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-50" value="" style="group;fontFamily=Courier New;labelBackgroundColor=none;" vertex="1" connectable="0" parent="YAavre0zh-Ue7fDhdw5P-108">
+          <mxGeometry width="687.14" height="71.16999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-33" value="Page&lt;br&gt;Header&lt;br&gt;(56byte)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
-          <mxGeometry x="50" width="50" height="71.17" as="geometry" />
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-32" value="File&lt;br&gt;Header" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
+          <mxGeometry width="60.63" height="71.16999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-39" value="Infimum&lt;br&gt;supremum&lt;br&gt;(26byte)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
-          <mxGeometry x="100" width="70" height="71.17" as="geometry" />
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-48" value="Page&lt;br&gt;Directory" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
+          <mxGeometry x="565.8799999999999" width="70.73499999999999" height="71.16999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-46" value="User Record&lt;br&gt;(无法确定)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
-          <mxGeometry x="170" width="270" height="71.17" as="geometry" />
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-49" value="File&lt;br&gt;Tailer" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
+          <mxGeometry x="636.615" width="50.525" height="71.16999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-47" value="Free Space&lt;br&gt;(无法确定)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
-          <mxGeometry x="440" width="100" height="71.17" as="geometry" />
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-33" value="Page&lt;br&gt;Header" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-108">
+          <mxGeometry x="60.63" width="60.63" height="71.16999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-48" value="Page&lt;br&gt;Directory&lt;br&gt;(不确定)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
-          <mxGeometry x="540" width="70" height="71.17" as="geometry" />
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-39" value="Infimum&lt;br&gt;supremum" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-108">
+          <mxGeometry x="121.26" width="70.73499999999999" height="71.16999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-49" value="File&lt;br&gt;Tailer&lt;br&gt;(8byte)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
-          <mxGeometry x="610" width="40" height="71.17" as="geometry" />
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-46" value="User Record" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-108">
+          <mxGeometry x="191.995" width="272.835" height="71.16999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-47" value="Free Space" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-108">
+          <mxGeometry x="464.83" width="101.05" height="71.16999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-107" value="" style="group" vertex="1" connectable="0" parent="YAavre0zh-Ue7fDhdw5P-108">
+          <mxGeometry y="71.17" width="687.14" height="19.999999999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-103" value="56byte" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;container=0;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-107">
+          <mxGeometry x="60.63" width="60.63" height="19.999999999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-104" value="26byte" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;container=0;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-107">
+          <mxGeometry x="121.26" width="70.73499999999999" height="19.999999999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-105" value="unkonwn" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;container=0;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-107">
+          <mxGeometry x="191.995" width="272.835" height="19.999999999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-106" value="unknown" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;container=0;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-107">
+          <mxGeometry x="464.83" width="101.05" height="19.999999999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-100" value="38byte" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;container=0;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-107">
+          <mxGeometry width="60.63" height="19.999999999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-101" value="unkonwn" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;container=0;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-107">
+          <mxGeometry x="565.8799999999999" width="70.73499999999999" height="19.999999999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-102" value="8byte" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;container=0;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-107">
+          <mxGeometry x="636.615" width="50.525" height="19.999999999999996" as="geometry" />
         </mxCell>
         <mxCell id="YAavre0zh-Ue7fDhdw5P-98" value="" style="group;strokeColor=default;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="-1690" y="260" width="950" height="380" as="geometry" />
