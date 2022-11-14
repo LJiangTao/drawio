@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-14T16:29:54.645Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="_lw3mXrGly-apouSdzGd" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-14T16:33:48.059Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="SIubraX6El5CSZaWDy8H" version="20.5.1" type="github">
   <diagram id="IUVNri6rh-2-FdHcO7aX" name="第 1 页">
     <mxGraphModel dx="3083" dy="2825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -127,7 +127,7 @@
         <mxCell id="YAavre0zh-Ue7fDhdw5P-49" value="File&lt;br&gt;Tailer&lt;br&gt;(8byte)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Courier New;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-50">
           <mxGeometry x="610" width="40" height="71.17" as="geometry" />
         </mxCell>
-        <mxCell id="YAavre0zh-Ue7fDhdw5P-98" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="YAavre0zh-Ue7fDhdw5P-98" value="" style="group;strokeColor=default;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="-1690" y="260" width="950" height="380" as="geometry" />
         </mxCell>
         <mxCell id="YAavre0zh-Ue7fDhdw5P-96" value="&lt;h1&gt;行数据格式&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=default;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;fontFamily=Courier New;fontColor=#000000;" vertex="1" parent="YAavre0zh-Ue7fDhdw5P-98">
