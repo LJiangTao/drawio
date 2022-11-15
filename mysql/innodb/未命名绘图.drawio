@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-15T06:30:53.496Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="HPhivbH_3iIZsYq6bkLo" version="20.3.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-15T07:47:36.580Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="Nib-L9zAidRjUQaJz0w3" version="20.3.3" type="github" pages="2">
   <diagram id="IUVNri6rh-2-FdHcO7aX" name="结构">
-    <mxGraphModel dx="2838" dy="1718" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3596" dy="2129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -279,7 +279,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="d3JSU54Vz3teP3BHVPG1-94" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="260" y="-540" width="1121.88" height="360" as="geometry" />
+          <mxGeometry x="240" y="-860" width="1121.88" height="360" as="geometry" />
         </mxCell>
         <mxCell id="d3JSU54Vz3teP3BHVPG1-1" value="CONTROL&lt;br&gt;BLOCK" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-94">
           <mxGeometry x="53.879999999999995" y="154.28571428571422" width="53.87755102040816" height="38.57142857142855" as="geometry" />
@@ -347,8 +347,8 @@
         <mxCell id="d3JSU54Vz3teP3BHVPG1-19" value="基节点" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-94">
           <mxGeometry y="154.28571428571422" width="53.87755102040816" height="38.57142857142855" as="geometry" />
         </mxCell>
-        <mxCell id="d3JSU54Vz3teP3BHVPG1-90" value="&lt;h1 style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;链表组成&lt;/h1&gt;&lt;h1&gt;&lt;p style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;; font-size: 1px; font-weight: 400;&quot;&gt;每一个缓存页都有一个 Control Block 控制, 一一对应. 当缓存也发生更改了, 那该缓存页的控制块就会被添加到 FRESH 链表中.&lt;/p&gt;&lt;p style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;; font-size: 1px; font-weight: 400;&quot;&gt;控制块在 FRESH 链表后就不会再次更改其顺序, 或许如果还有存在数据变更, 只会更改控制块的 newest_modification LSN 数值.&lt;/p&gt;&lt;p style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;; font-size: 1px; font-weight: 400;&quot;&gt;下方则是链表中的控制块信息&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#46495D;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-94">
-          <mxGeometry x="3.8799999999999955" width="400" height="120" as="geometry" />
+        <mxCell id="d3JSU54Vz3teP3BHVPG1-90" value="&lt;h1 style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;链表组成&lt;/h1&gt;&lt;h1&gt;&lt;p style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;; font-size: 1px; font-weight: 400;&quot;&gt;每一个缓存页都有一个 Control Block 控制, 一一对应. 当缓存也发生更改了, 那该缓存页的控制块就会被添加到 FRESH 链表中.&lt;/p&gt;&lt;p style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;; font-size: 1px; font-weight: 400;&quot;&gt;控制块在 FRESH 链表后就不会再次更改其顺序, 或许如果还有存在数据变更, 只会更改控制块的 newest_modification LSN 数值.&lt;/p&gt;&lt;p style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;; font-size: 1px; font-weight: 400;&quot;&gt;下方则是链表中的控制块信息&lt;/p&gt;&lt;p style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;; font-size: 1px; font-weight: 400;&quot;&gt;LRU 存放的是冷热数据缓存页的控制块&lt;/p&gt;&lt;p style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;; font-size: 1px; font-weight: 400;&quot;&gt;FLUSH 存放的是脏页所对应的控制块&lt;/p&gt;&lt;p style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Courier New&amp;quot;; font-size: 1px; font-weight: 400;&quot;&gt;FREE 存放的是空白缓存页的控制块, 用于给新增数据分配新的缓存页&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#46495D;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-94">
+          <mxGeometry y="-40" width="816.12" height="150" as="geometry" />
         </mxCell>
         <mxCell id="d3JSU54Vz3teP3BHVPG1-36" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;container=0;" vertex="1" connectable="0" parent="d3JSU54Vz3teP3BHVPG1-94">
           <mxGeometry x="163.88" y="260" width="198" height="80" as="geometry" />
@@ -500,21 +500,10 @@
           <mxGeometry x="923.8800000000001" y="268" width="100" height="10" as="geometry" />
         </mxCell>
         <mxCell id="d3JSU54Vz3teP3BHVPG1-95" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="-550" y="-540" width="790" height="420" as="geometry" />
+          <mxGeometry x="-670" y="-880" width="790" height="420" as="geometry" />
         </mxCell>
         <mxCell id="I45aFvxJRrpSxKN8XTmU-75" value="&lt;h1&gt;Flush 链表&lt;/h1&gt;&lt;div&gt;flush 链表就是我们所谓的脏链表, 后台线程会每秒将脏页刷新到存储中, 保证缓存数据和存储数据的一致性&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Courier New;fontSize=11;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-95">
           <mxGeometry x="600" width="190" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="I45aFvxJRrpSxKN8XTmU-76" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Courier New;fontSize=11;entryX=0.36;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="d3JSU54Vz3teP3BHVPG1-95" target="I45aFvxJRrpSxKN8XTmU-75" source="I45aFvxJRrpSxKN8XTmU-64">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="450" y="320" as="sourcePoint" />
-            <mxPoint x="700" y="250" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="590" y="320" />
-              <mxPoint x="660" y="290" />
-              <mxPoint x="695" y="200" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="I45aFvxJRrpSxKN8XTmU-30" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-95">
           <mxGeometry width="590" height="420" as="geometry" />
@@ -604,7 +593,7 @@
         <mxCell id="I45aFvxJRrpSxKN8XTmU-58" value="DATA" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-95">
           <mxGeometry x="145" y="255" width="65" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="I45aFvxJRrpSxKN8XTmU-62" value="FLUSH 链表" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-95">
+        <mxCell id="I45aFvxJRrpSxKN8XTmU-62" value="FLUSH链表" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-95">
           <mxGeometry x="30" y="300" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="I45aFvxJRrpSxKN8XTmU-64" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-95">
@@ -681,6 +670,51 @@
         <mxCell id="EvC7dE9SErdilOBLiamm-11" value="DATA" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;container=0;" vertex="1" parent="d3JSU54Vz3teP3BHVPG1-95">
           <mxGeometry x="145" y="355" width="65" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="I45aFvxJRrpSxKN8XTmU-76" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Courier New;fontSize=11;entryX=0.36;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="d3JSU54Vz3teP3BHVPG1-95" target="I45aFvxJRrpSxKN8XTmU-75" source="I45aFvxJRrpSxKN8XTmU-64">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="320" as="sourcePoint" />
+            <mxPoint x="700" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LTdzoD-3VxV_eaKeeO4-3" value="" style="endArrow=classic;html=1;curved=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="d3JSU54Vz3teP3BHVPG1-95" target="d3JSU54Vz3teP3BHVPG1-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="320" as="sourcePoint" />
+            <mxPoint x="800" y="233.57142857142844" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LTdzoD-3VxV_eaKeeO4-2" value="" style="endArrow=classic;html=1;curved=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I45aFvxJRrpSxKN8XTmU-50" target="d3JSU54Vz3teP3BHVPG1-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="-560" as="sourcePoint" />
+            <mxPoint x="80" y="-610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="-580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LTdzoD-3VxV_eaKeeO4-4" value="" style="endArrow=classic;html=1;curved=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EvC7dE9SErdilOBLiamm-3" target="d3JSU54Vz3teP3BHVPG1-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-110" y="-530" as="sourcePoint" />
+            <mxPoint x="250" y="-676.4285714285716" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="-510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1-MwT6nZFAI-6V2tfk1C-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="640" width="840" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="1-MwT6nZFAI-6V2tfk1C-4" value="&lt;h1&gt;REDO LOG&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="645" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1-MwT6nZFAI-6V2tfk1C-71" value="&lt;h1&gt;CHANGE BUFFER&lt;/h1&gt;&lt;div&gt;change buffer 是 buffer pool 中的一部分. 主要将DML语句所产生的不在 buffer pool 中的数据页更改存放于 change buffer 的二级缓存中. change buffer 会在对应数据页读入 buffer pool 时将磁盘数据进行更新. 同样还会定时调用后台线程执行磁盘数据更新.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;⚠ 在唯一索引下, 如果在写后立即进行了查询, 那 CHANGE BUFFER 会立即进行磁盘更新, 导致产生更多的 IO.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="-450" width="500" height="145" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -744,6 +778,9 @@
         <mxCell id="Upyyl7KLdTwoik2C1Vv4-36" value="BUFFER POOL" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="240" y="460" width="240" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="6mUYCkeBvlEraIAAABV6-2" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Upyyl7KLdTwoik2C1Vv4-37" target="6mUYCkeBvlEraIAAABV6-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Upyyl7KLdTwoik2C1Vv4-37" value="筛选数据" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="80" y="460" width="110" height="30" as="geometry" />
         </mxCell>
@@ -761,6 +798,9 @@
         </mxCell>
         <mxCell id="NT0NnPuFdUk8RXwgRiTz-3" value="数据加锁" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="80" y="400" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6mUYCkeBvlEraIAAABV6-1" value="筛选数据" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="570" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
