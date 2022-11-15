@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-15T07:48:06.826Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="YEWYOB0b28NTfFtxOeFV" version="20.3.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-15T10:43:03.229Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="iwPnQQ1Qt9lTAmgdlynC" version="20.3.3" type="github" pages="2">
   <diagram id="IUVNri6rh-2-FdHcO7aX" name="结构">
-    <mxGraphModel dx="3596" dy="2129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3280" dy="1958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -712,8 +712,8 @@
         <mxCell id="1-MwT6nZFAI-6V2tfk1C-4" value="&lt;h1&gt;REDO LOG&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="870" y="645" width="190" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="1-MwT6nZFAI-6V2tfk1C-71" value="&lt;h1&gt;CHANGE BUFFER&lt;/h1&gt;&lt;div&gt;change buffer 是 buffer pool 中的一部分. 主要将DML语句所产生的不在 buffer pool 中的数据页更改存放于 change buffer 的二级缓存中. change buffer 会在对应数据页读入 buffer pool 时将磁盘数据进行更新. 同样还会定时调用后台线程执行磁盘数据更新.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;⚠ 在唯一索引下, 如果在写后立即进行了查询, 那 CHANGE BUFFER 会立即进行磁盘更新, 导致产生更多的 IO.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-670" y="-450" width="500" height="145" as="geometry" />
+        <mxCell id="1-MwT6nZFAI-6V2tfk1C-71" value="&lt;h1&gt;CHANGE BUFFER&lt;/h1&gt;&lt;div&gt;change buffer 是 buffer pool 中的一部分. 主要将DML语句所产生的不在 buffer pool 中的数据页更改存放于 change buffer 的二级缓存中. change buffer 会在对应数据页读入 buffer pool 时将磁盘数据进行更新. 同样还会定时调用后台线程执行磁盘数据更新. 当事务提交时也会进行数据写入.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;⚠ 在唯一索引下, 如果在写后立即进行了查询, 那 CHANGE BUFFER 会立即进行磁盘更新, 导致产生更多的 IO.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CHANGE BUFFER 在写入磁盘数据时会写入 REDO LOG 记录.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="-450" width="500" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
