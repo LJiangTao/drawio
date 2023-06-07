@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-07T03:37:44.492Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="u5jaExwvXLUETrrrZTW7" version="21.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-07T03:38:16.596Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="ztREKh1VgsYFywmWEl-7" version="21.3.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2290" dy="1313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -142,13 +142,13 @@
         <mxCell id="YW_nNUSfuDypxEYYlCQ3-30" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;更新池的坏连接计数&lt;br style=&quot;font-size: 12px;&quot;&gt;如果超过 (空闲数+坏连接最大容忍数) 则抛出 SqlException 异常&lt;/font&gt;" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;rounded=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;hachureGap=4;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontFamily=Architects Daughter;fontSize=12;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1070" y="530" width="320" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="YW_nNUSfuDypxEYYlCQ3-37" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CC0000;fontFamily=Helvetica;fontSize=12;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YW_nNUSfuDypxEYYlCQ3-34" target="YW_nNUSfuDypxEYYlCQ3-36" edge="1">
+        <mxCell id="YW_nNUSfuDypxEYYlCQ3-37" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CC0000;fontFamily=Helvetica;fontSize=12;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YW_nNUSfuDypxEYYlCQ3-34" target="YW_nNUSfuDypxEYYlCQ3-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YW_nNUSfuDypxEYYlCQ3-40" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4D9900;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=12;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YW_nNUSfuDypxEYYlCQ3-34" target="YW_nNUSfuDypxEYYlCQ3-39" edge="1">
+        <mxCell id="YW_nNUSfuDypxEYYlCQ3-40" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4D9900;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=12;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YW_nNUSfuDypxEYYlCQ3-34" target="YW_nNUSfuDypxEYYlCQ3-39" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YW_nNUSfuDypxEYYlCQ3-34" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;连接是否为空&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;rounded=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="YW_nNUSfuDypxEYYlCQ3-34" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;连接不为空&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;rounded=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="400" y="830" width="140" height="80" as="geometry" />
         </mxCell>
         <mxCell id="YW_nNUSfuDypxEYYlCQ3-36" value="抛出 SqlException" style="whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;rounded=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;hachureGap=4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
