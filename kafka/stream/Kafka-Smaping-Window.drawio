@@ -1,9 +1,147 @@
-<mxfile host="app.diagrams.net" modified="2023-08-04T16:19:02.869Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" version="21.6.6" etag="fHHcKQGfeShxj9hfDfLF" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-04T16:19:10.934Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="5hbE45LT5DXSH_iDWFSe" version="21.6.6" type="github">
   <diagram name="第 1 页" id="tOxqbouWK12hllR66_O8">
-    <mxGraphModel>
+    <mxGraphModel dx="2290" dy="1306" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-1" value="Tumbling Window" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="80" width="770" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-2" value="" style="rounded=1;whiteSpace=wrap;html=1;opacity=70;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="30" y="47.5" width="170" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-3" value="" style="rounded=1;whiteSpace=wrap;html=1;opacity=70;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="210" y="47.5" width="170" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-4" value="" style="rounded=1;whiteSpace=wrap;html=1;opacity=70;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="390" y="47.5" width="170" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-5" value="" style="rounded=1;whiteSpace=wrap;html=1;opacity=70;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="570" y="47.5" width="170" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-6" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="40" y="55" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-7" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="670" y="55" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-8" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="130" y="55" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-9" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="220" y="55" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-10" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="310" y="55" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-11" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="400" y="55" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-12" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="490" y="55" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-13" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-1">
+          <mxGeometry x="580" y="55" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-14" value="&lt;h1&gt;Tumbling Window 固定窗口&lt;/h1&gt;&lt;div&gt;固定窗口只有一个固定窗口大小, 窗口与窗口之间没有时间间隔.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-15" value="Hopping Window" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="380" width="940" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-16" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="120" y="130" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-17" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="200" y="120" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-18" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="280" y="110" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-19" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="360" y="100" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-20" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="130" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-21" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="209" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-22" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="287" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-23" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="366" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-24" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="445" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-25" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="524" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-26" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="602" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-27" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="681" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-28" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-15">
+          <mxGeometry x="760" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-29" value="&lt;h1&gt;Hopping Window 跳跃窗口&lt;/h1&gt;&lt;div&gt;跳跃窗口与固定是窗口同样有指定的窗口大小, 但是多了一个开始窗口间隔 (开始窗口间隔, 不是窗口间隔).&lt;/div&gt;&lt;div&gt;在跳跃窗口中, 窗口会随着所设定的 &quot;开始窗口间隔&quot; 进行移动. 会在移动过程中将头部窗口的数值减去, 然后接收数据并进行统计.&lt;/div&gt;&lt;div&gt;跳跃窗口可以有效地计算指定范围内的指标信息, 通过 &quot;开始窗口间隔 (advanceBy)&quot; 控制采样频率. 而固定窗口由于窗口与窗口之间虽然没有间隙, 但在上一个窗口的最后一个节点和新窗口的第一个节点, 这两点是无法合并进行采样的.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="690" width="790" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-30" value="Tumbling Window Sampling Problem" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="830" width="950" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-31" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="60" y="70" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-32" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="280" y="67.5" width="190" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-33" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="500" y="66.25" width="190" height="73.75" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-34" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="720" y="67.5" width="190" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-35" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="70" y="75" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-36" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="840" y="75" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-37" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="180" y="75" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-38" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="290" y="75" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-39" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="400" y="75" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-40" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="510" y="75" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-41" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="620" y="75" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-42" value="10" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="730" y="75" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-43" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="170" y="60" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-44" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="390" y="58.13" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-45" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;" vertex="1" parent="YFSWn0u4x4KBoAhABjn5-30">
+          <mxGeometry x="617" y="58.74999999999999" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-46" value="&lt;h1&gt;Tumbling Window Sampling Problem&lt;br&gt;&lt;/h1&gt;&lt;div&gt;上图中使用红色方块标注的就是固定窗口无法连续采样的位置. 由于这部分无法连续采样, 会导致在下一个时间窗口起始计算指标出现大范围的波动, 而且采样数值不准确.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1060" width="940" height="90" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
