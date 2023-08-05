@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-05T02:04:10.569Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="2bmSGPpXVdztC8H0FxdN" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-05T02:05:27.029Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="X68Kf-zaEV5wngcnzAu0" version="21.6.6" type="github">
   <diagram name="第 1 页" id="tOxqbouWK12hllR66_O8">
     <mxGraphModel dx="1908" dy="1088" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -170,7 +170,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="YFSWn0u4x4KBoAhABjn5-29" value="&lt;h1&gt;Hopping Window 跳跃窗口&lt;/h1&gt;&lt;div&gt;跳跃窗口与固定是窗口同样有指定的窗口大小, 但是多了一个开始窗口间隔 (开始窗口间隔, 不是窗口间隔).&lt;/div&gt;&lt;div&gt;在跳跃窗口中, 会按照所设定的 &quot;开始窗口间隔&quot; 创建新的窗口.&amp;nbsp;&lt;/div&gt;&lt;div&gt;跳跃窗口可以有效地计算指定范围内的指标信息, 通过 &quot;开始窗口间隔 (advanceBy)&quot; 控制采样频率. 而固定窗口由于窗口与窗口之间虽然没有间隙, 但在上一个窗口的最后一个节点和新窗口的第一个节点, 这两点是无法合并进行采样的.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+        <mxCell id="YFSWn0u4x4KBoAhABjn5-29" value="&lt;h1&gt;Hopping Window 跳跃窗口&lt;/h1&gt;&lt;div&gt;跳跃窗口与固定是窗口同样有指定的窗口大小, 但是多了一个开始窗口间隔 (开始窗口间隔, 不是窗口间隔).&lt;/div&gt;&lt;div&gt;在跳跃窗口中, 会按照所设定的 &quot;开始窗口间隔&quot; 创建新的窗口.&amp;nbsp; 过多的窗口会需要更多的内存和处理来保持窗口数据的正确, 这就会导致性能的下降.&lt;/div&gt;&lt;div&gt;跳跃窗口可以有效地计算指定范围内的指标信息, 通过 &quot;开始窗口间隔 (advanceBy)&quot; 控制采样频率. 而固定窗口由于窗口与窗口之间虽然没有间隙, 但在上一个窗口的最后一个节点和新窗口的第一个节点, 这两点是无法合并进行采样的.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="18" y="850" width="790" height="120" as="geometry" />
         </mxCell>
         <mxCell id="YFSWn0u4x4KBoAhABjn5-30" value="Tumbling Window Sampling Problem" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
